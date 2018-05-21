@@ -1,0 +1,15 @@
+{
+  "name": "eos-js-demo",
+  "version": "0.1.0",
+  "description": "eosjs lib usage demostration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pluswave <pluswave@xiaofuxing.name>",
+  "license": "ISC",
+  "dependencies": {
+    "eosjs": "^12.0.0",
+    "prompt-password": "^1.2.0"
+  }
+}
