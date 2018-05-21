@@ -3,7 +3,7 @@ const Eos = require('eosjs');
 const Prompt = require('prompt-password');
 
 
-function getAuthonArray(transaction) {
+function getAuthArray(transaction) {
     var auths = []
     var actions = transaction.transaction.actions;
     actions.forEach(action => {
@@ -21,7 +21,7 @@ function getPrivateKey(auth) {
 
     var prompt = new Prompt({
         type: 'password',
-        message: '输入私钥:' + auth,
+        message: 'please input private key for ' + auth + ':',
         name: 'privatekey'
     });
     return prompt.run();
@@ -29,10 +29,7 @@ function getPrivateKey(auth) {
 
 function keyProvider(transaction) {
     console.log(JSON.stringify(transaction, null, 2));
-    var auth_array = getAuthonArray(transaction);
-    // return []; //'5xxxxxxxxxxxxxxxxxxxxxx' ;
-
-    //pseries(auth_array.map(getPrivateKey))
+    var auth_array = getAuthArray(transaction);
 
     var auth_index = 0;
     var result = [];
