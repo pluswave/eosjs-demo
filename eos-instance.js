@@ -48,7 +48,8 @@ function keyProvider(transaction) {
     return getKey();
 }
 
-var jungleTestnet = Eos.Localnet({
+var jungleTestnet = Eos({
+    chainId: '7d47aae09c97dbc21d52c6d9f17bb70a1f1f2fda5f81b3ef18979b74b2070d8c',
     httpEndpoint: 'http://testnode.eos.magicw.net:8887',
     keyProvider: keyProvider
 });
