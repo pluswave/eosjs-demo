@@ -49,7 +49,7 @@ function keyProvider(transaction) {
 }
 
 var jungleTestnet = Eos({
-    chainId: '7d47aae09c97dbc21d52c6d9f17bb70a1f1f2fda5f81b3ef18979b74b2070d8c',
+    chainId: '038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca',
     httpEndpoint: 'http://testnode.eos.magicw.net:8887',
     keyProvider: keyProvider
 });
