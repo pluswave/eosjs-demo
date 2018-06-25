@@ -3,7 +3,7 @@
 const eosInstance = require('./eos-instance');
 
 eosInstance.transaction(tr => {
-    return tr.newaccount({
+    tr.newaccount({
         creator: 'pluswavemagi',
         name: 'amagicwallet',
         owner: {
@@ -21,6 +21,19 @@ eosInstance.transaction(tr => {
           }]
         }
     })
+   tr.buyrambytes({
+    payer: 'pluswavemagi',
+    receiver: 'amagicwallet',
+    bytes: 8192
+   })
+
+  tr.delegatebw({
+    from: 'pluswavemagi',
+    receiver: 'amagicwallet',
+    stake_net_quantity: '10.0000 EOS',
+    stake_cpu_quantity: '10.0000 EOS',
+    transfer: 0
+  })
 }).then(console.log)
     .catch(e => {
         console.error(e);
