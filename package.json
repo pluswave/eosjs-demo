@@ -9,7 +9,7 @@
   "author": "Pluswave <pluswave@xiaofuxing.name>",
   "license": "ISC",
   "dependencies": {
-    "eosjs": "^14.1.0",
+    "eosjs": "^15.0.3",
     "prompt-password": "^1.2.0"
   }
 }
