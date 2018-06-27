@@ -4,8 +4,8 @@ const eosInstance = require('./eos-instance');
 
 const creator = 'pluswavemagi';
 const accountName = 'amagicwallet';
-const owner_key = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
-const active_key = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
+const owner_pubkey = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
+const active_pubkey = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
 
 eosInstance.transaction(tr => {
     tr.newaccount({
