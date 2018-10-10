@@ -2,7 +2,5 @@
 
 const  eosInstance = require('./eos-instance');
 
-eosInstance.getActions({
-    account_name: 'testaccount1'
-}).then( a=>console.log(JSON.stringify(a,null,2)) );
+eosInstance.rpc.history_get_actions('testaccount1').then( a=>console.log(JSON.stringify(a,null,2)) );
 

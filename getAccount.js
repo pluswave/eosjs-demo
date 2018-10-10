@@ -2,6 +2,7 @@
 
 const  eosInstance = require('./eos-instance');
 
-eosInstance.getAccount({account_name:'testaccount1'}).then(console.log);
+eosInstance.rpc.get_account('testaccount1').then(
+    x=>console.log(JSON.stringify(x,null,2)));
 
 

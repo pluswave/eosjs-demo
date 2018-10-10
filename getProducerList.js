@@ -2,7 +2,7 @@
 
 const eosInstance = require('./eos-instance');
 
-eosInstance.getTableRows({
+eosInstance.rpc.get_table_rows({
     json: true,
     code: 'eosio',
     scope: 'eosio',

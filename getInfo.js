@@ -2,6 +2,6 @@
 
 const  eosInstance = require('./eos-instance');
 
-eosInstance.getInfo({}).then(console.log);
+eosInstance.rpc.get_info({}).then(console.log);
 
 
