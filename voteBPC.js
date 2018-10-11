@@ -2,13 +2,25 @@
 
 const eosInstance = require('./eos-instance');
 
-eosInstance.transaction(tr => {
-    return tr.voteproducer({
-        voter: 'pluswavemagi',
-        proxy: '',
-        producers: ['cronoseos123', 'lioninjungle' ],
-    })
-}).then(console.log)
+
+eosInstance.transact({
+    actions: [{
+        account: 'eosio',
+        name: 'voteproducer',
+        authorization: [{
+            actor: 'pluswavemagi',
+            permission: 'active',
+        }],
+        data: {
+            voter: 'pluswavemagi',
+            proxy: '',
+            producers: ['cronoseos123', 'lioninjungle' ],
+        }
+    }]
+}, {
+        blocksBehind: 3,
+        expireSeconds: 30,
+    }).then(console.log)
     .catch(e => {
         console.error(e);
     })
