@@ -4,11 +4,11 @@ const  eosInstance = require('./eos-instance');
 
 eosInstance.rpc.get_currency_balance(
    'eosio.token',
-   'pluswavemagi',
-   'EOS'
+   'yoafkunfjhoo',
+   'TNT'
 ).then(console.log);
 
 
 eosInstance.rpc.get_currency_balance(   'eosio.token',
-'pluswavemagi',
+'yoafkunfjhoo',
 ).then(console.log);

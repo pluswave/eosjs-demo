@@ -7,14 +7,14 @@ eosInstance.transact({
         account: 'eosio',
         name: 'delegatebw',
         authorization: [{
-            actor: 'pluswavemagi',
+            actor: 'yoafkunfjhoo',
             permission: 'active',
         }],
         data: {
-            from: 'pluswavemagi',
-            receiver: 'pluswavemagi',
-            stake_net_quantity: '100.0000 EOS',
-            stake_cpu_quantity: '100.0000 EOS',
+            from: 'yoafkunfjhoo',
+            receiver: 'yoafkunfjhoo',
+            stake_net_quantity: '100.0000 TNT',
+            stake_cpu_quantity: '100.0000 TNT',
             transfer: false
         }
     }]

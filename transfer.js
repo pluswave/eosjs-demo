@@ -7,11 +7,11 @@ eosInstance.transact({
         account: 'eosio.token',
         name: 'transfer',
         authorization: [{
-            actor: 'pluswavemagi',
+            actor: 'yoafkunfjhoo',
             permission: 'active',
         }],
         data: {
-            from: 'pluswavemagi',
+            from: 'yoafkunfjhoo',
             to: 'amagicwallet',
             quantity: '0.0001 EOS',
             memo: 'hello world'

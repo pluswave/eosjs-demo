@@ -8,11 +8,11 @@ eosInstance.transact({
         account: 'eosio',
         name: 'voteproducer',
         authorization: [{
-            actor: 'pluswavemagi',
+            actor: 'yoafkunfjhoo',
             permission: 'active',
         }],
         data: {
-            voter: 'pluswavemagi',
+            voter: 'yoafkunfjhoo',
             proxy: '',
             producers: ['cronoseos123', 'lioninjungle' ],
         }

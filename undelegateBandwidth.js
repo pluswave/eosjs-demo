@@ -7,14 +7,14 @@ eosInstance.transact({
         account: 'eosio',
         name: 'undelegatebw',
         authorization: [{
-            actor: 'pluswavemagi',
+            actor: 'yoafkunfjhoo',
             permission: 'active',
         }],
         data: {
-            from: 'pluswavemagi',
-            receiver: 'pluswavemagi',
-            unstake_net_quantity: '10.0000 EOS',
-            unstake_cpu_quantity: '10.0000 EOS'
+            from: 'yoafkunfjhoo',
+            receiver: 'yoafkunfjhoo',
+            unstake_net_quantity: '10.0000 TNT',
+            unstake_cpu_quantity: '10.0000 TNT'
         }
     }]
 }, {

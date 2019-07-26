@@ -2,10 +2,11 @@
 
 const eosInstance = require('./eos-instance');
 
-const creator = 'pluswavemagi';
-const accountName = 'emagicwallet';
-const owner_pubkey = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
-const active_pubkey = 'EOS5kdTT2HrgU8RmfSUqdXjbzfaiSF4xEeDFrwtA1XTEGbv8Hv6y3'
+const creator = 'yoafkunfjhoo';
+const accountName = 'amagicwallet';
+const owner_pubkey = 'EOS8WWEv86zWADVyF66ibiwUW6zEN6D9Ao87rXj1LRwuZPKH35NSR'
+const active_pubkey = 'EOS7yRrYEGvQ7cx7jUMwRSjR8YX5aqcgbHiYdcHJcXTHLWfWSh6NY'
+
 eosInstance.transact({
     actions: [{
         account: 'eosio',
@@ -58,8 +59,8 @@ eosInstance.transact({
         data: {
             from: creator,
             receiver: accountName,
-            stake_net_quantity: '10.0000 EOS',
-            stake_cpu_quantity: '10.0000 EOS',
+            stake_net_quantity: '10.0000 TNT',
+            stake_cpu_quantity: '10.0000 TNT',
             transfer: false
         }
     }]

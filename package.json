@@ -9,8 +9,8 @@
   "author": "Pluswave <pluswave@xiaofuxing.name>",
   "license": "ISC",
   "dependencies": {
-    "eosjs": "^20.0.0-beta1",
-    "node-fetch": "^2.2.0",
+    "eosjs": "^20.0.0",
+    "node-fetch": "^2.6.0",
     "prompt-password": "^1.2.0",
     "text-encoding": "^0.7.0"
   }
